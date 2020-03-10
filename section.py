@@ -5,4 +5,4 @@ class Section:
         self.x2 = x2
 
     def len(self):
-        return abs(self.x1 - self.x2)
+        return abs(self.x2 - self.x1)

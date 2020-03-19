@@ -50,6 +50,10 @@ def main():
                         if not isOverlap([i, j, k]) and lengthOfThree(i, j, k) > maxLength:
                             maxLength = lengthOfThree(i, j, k)
                             indexes = [i1, j1, k1]
+                            f = open("Output/1.txt", "w+")
+                            f.write("First " + str(i1))
+                            f.write(" Second " + str(j1))
+                            f.write(" Third " + str(k1))
                 k1 = 0
         j1 = 0
     print(maxLength)

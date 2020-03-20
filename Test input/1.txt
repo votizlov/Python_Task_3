@@ -1,3 +1,2 @@
-a 1 1 1
-b 2 2 2
-c 3 3 3
+a 1 female 5
+b 1 male 3

@@ -41,7 +41,8 @@ def main():
                 elif stud.avg == bestFemales[0].avg:
                     bestFemales.append(stud)
         if bestMales[0].avg > 0 and bestFemales[0].avg > 0:
-            output = output + "Курс: " + str(cource[0].cource) + " " + random.choice(bestFemales).name + " " + random.choice(
+            output = output + "Курс: " + str(cource[0].cource) + " " + random.choice(
+                bestFemales).name + " " + random.choice(
                 bestMales).name + "\n"
 
     f = open("Output/1.txt", "w+")

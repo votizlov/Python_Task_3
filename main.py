@@ -30,10 +30,19 @@ def compUtil(s):
 
 def main():
     output = ""
+    stip = 3
     for cource in coursesWithStudents:
         cource.sort(key=compUtil)
+        output = output + "Курс: " + str(cource[cource.__len__()-1].cource) + " " + cource[cource.__len__()-1].name + "\n"
+        allStudents.remove(cource[cource.__len__()-1])
+        stip = stip - 1
 
+    allStudents.sort(key=compUtil)
 
+    while stip > 0:
+        output = output + "Курс: " + str(allStudents[allStudents.__len__()-1].cource) + " " + allStudents[allStudents.__len__()-1].name + "\n"
+        allStudents.remove(allStudents[allStudents.__len__()-1])
+        stip = stip - 1
 
     f = open("Output/1.txt", "w+")
     f.write(output)
